@@ -1,0 +1,23 @@
+flowchart TB
+    C["CLAIM C + MODEL M"]
+    PRE{"PreClass ?"}
+    UND["UNBOUNDED / INDETERMINATE"]
+    ATK["ATTAQUES + TESTS + EVIDENCE"]
+    ELM["ÉLIMINATION 5 cond."]
+    CSG["CUT SETS minimal_{M,Reg} dec_class"]
+    RFS["RFS_t — statuts"]
+    STR["Structural"]
+    CONS["Consistent(J, Dep)"]
+    CLOSE["CLOSE | J*"]
+    V["VERDICT"]
+
+    C --> PRE
+    PRE -->|NON| UND
+    PRE -->|OUI| ATK
+    ATK --> ELM
+    ELM --> CSG
+    CSG --> RFS
+    RFS --> STR
+    STR --> CONS
+    CONS --> CLOSE
+    CLOSE --> V

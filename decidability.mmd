@@ -1,0 +1,12 @@
+flowchart TB
+    CS["Cut Set CS"]
+    CS --> DEC{"dec_class"}
+    DEC -->|D₃| D3["OPEN_UNDECIDABLE"]
+    DEC -->|D₂| D2["OPEN_SEMIDECIDABLE"]
+    DEC -->|D₁| D1{"Calc_pratique"}
+    D1 -->|FEASIBLE| FOK["OPEN_DECIDABLE"]
+    D1 -->|INFEASIBLE| FKO["OPEN_UNDECIDABLE_B"]
+    D3 --> RFS["RFS"]
+    D2 --> RFS
+    FOK --> RFS
+    FKO --> RFS

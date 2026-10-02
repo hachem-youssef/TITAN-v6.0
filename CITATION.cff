@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+title: "TITAN v6.0"
+message: "Please cite TITAN v6.0."
+type: software
+authors:
+  - family-names: "Youssef"
+    given-names: "Hachem"
+date-released: "2026-09-27"
+version: "6.0"
+abstract: "Cadre d'assurance adversariale bornée. TITAN organise l'examen d'affirmations critiques par modélisation bornée, génération adversariale, chemins résiduels de falsification, lacunes du modèle, versionnement et séparation entre verdict épistémique et décision de gouvernance."
+license: "CC-BY-4.0"
+repository-code: ""
